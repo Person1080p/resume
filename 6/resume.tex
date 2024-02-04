@@ -3,13 +3,14 @@
 
 \usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
 \usepackage{enumitem}
+\usepackage[colorlinks=false, urlcolor=black, linkcolor=red]{hyperref}
 
 \begin{document}
 \begin{center}
 \thispagestyle{empty}
 \large \textbf{Christian Gutierrez \\}
-\normalsize cg462@njit.edu $\mid$ 201-290-0058 $\mid$ https://chrisgutie.tech
- $\mid$ GitHub: Person1080p    \\
+\normalsize \href{mailto:cg462@njit.edu}{cg462@njit.edu} $\mid$ \href{tel:2012900058}{201-290-0058} $\mid$ \href{https://chrisgutie.tech}{https://chrisgutie.tech}
+ $\mid$ \href{https://github.com/Person1080p}{GitHub: Person1080p}    \\
 \hrulefill
 \end{center}
 
@@ -29,13 +30,6 @@
 %Skill 1 (years of experience), Skill 2 (years of experience), Skill 3 (years of experience) \\
 % Skill 1 (level of expertise), Skill 2 (level of expertise), Skill 3 (level of expertise) \\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% EDUCATION
-% University name, degree, year of graduation, GPA (optional)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent \textbf{\underline{EDUCATION}} \\
-\textbf{New Jersey Institute of Technology} \hfill Newark, New Jersey \\
-\textit{Computer Science}  \hfill \hfill 2019 $-$ 2023 \\
 
 %\textit{Computer Science} \hfill GPA: x.x/x.x \hfill month-year \\ \\
 
@@ -47,9 +41,8 @@
 % Continue to keep only relevant skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent \textbf{\underline{Skills}} \\
-\noindent \textbf{Programming: } Python, Java, C, C++, C\#, Bash, JSON, JavaScript, HTML5, 
-CSS, mySQL, \LaTeX\\
-\noindent \textbf{Technologies: } Linux, VSCode, Azure Devops, JFrog, Openshift, Jenkins, SonarQube, NGINX, systemD, VirtualBox\\ \\
+\noindent \textbf{Programming Languages: } Python, Java, C\#, C, C++, Bash/Powershell, JavaScript, Angular, HTML5/CSS, CouchBase, mySQL, \LaTeX\\
+\noindent \textbf{Technologies: } Linux, VSCode, Azure Devops, JFrog, Openshift, Google Kubernetes Engine, Docker, Jenkins, SonarQube, NGINX, systemD, VirtualBox, Windows Server\\ \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % WORK EXPERIENCE
 % What did you do? -> Project goals OR what problem did you solve?
@@ -65,11 +58,20 @@ CSS, mySQL, \LaTeX\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent \textbf{\underline{WORK EXPERIENCE}} \\
 \noindent \textbf{United Parcel Service (UPS)} \hfill Parsippany, New Jersey \\
-\textit{Engineering Major Co-Op, DCT-BV} \hfill August, 2022 $-$ Present
+\textit{Software Development Engineer I, DCT-BV/CETD/CVD} \hfill June, 2023 $-$ Present
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item {Worked under multiple teams, primarily the CVD(Commercial Visibility Dashboard) Team, and Scrum Master for CETD (Customer Engagement Technology Dashboard)}
+\item {Migrated all 6 BV applications to OCP4/GKE to modernize and enable deployments to the public cloud instead of restricted to on-prem servers}
+\item {Created a new API to start work on a redesign of CVD to display a flyout for tracking packages}
+\item {Documented the various maintenance procedures for CETD in an Azure Devops Wiki to provide a centralized place for developers to reference instead of an old Sharepoint server}
+\item {Migrated the CETD API to a new internal server farm due to improve security compliance}
+\item {Solved 200+ security flags from package deferrals in Maven and NPM to improve security compliance}
+\end{itemize}\textit{Engineering Major Co-Op, DCT-BV} \hfill August, 2022 $-$ June 2023
 \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
 \item {Worked under the Branded Visibility team as a developer while continuing my education at NJIT}
-\item {Technologies include: C\#, Java Springboot, Postman, Jenkins, SonarQube}
-\item {Trained a fellow Co-Op on how to use the technologies maintained and developed by our team\\}
+\item {Fixed 300+ Code Smells detected in SonarQube to improve code quality and readability}
+\item {Worked with Devops extensively to begin migration to a new deployment platform}
+\item {Trained a fellow Co-Op on how to use the technologies maintained and developed by our team}\\
 \end{itemize}
 
 \noindent \textbf{Assurance Labs} \\
@@ -80,12 +82,6 @@ CSS, mySQL, \LaTeX\\
 \item {Designed in a static html page with dynamic built-in features\\}
 \end{itemize}
 
-\noindent \textbf{New Jersey Institute of Technology} \hfill Newark, New Jersey \\
-\textit{Academic Advising Assistant, Ying Wu College of Computing} \hfill October, 2021 $-$ January, 2022
-\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-\item {Assisted students with many issues from financial aid, international students and course order guidance}
-\item {Memorized details pertaining to various YWCC majors (CS/IT/IS) to help students quickly\\}
-\end{itemize}
 
 % \noindent \textbf{Company name} \hfill City Name, State \\
 % \textit{Role name} \hfill Month, Year $-$ Month, Year
@@ -102,6 +98,13 @@ CSS, mySQL, \LaTeX\\
 % \item {... \\}
 % \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EDUCATION
+% University name, degree, year of graduation, GPA (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \textbf{\underline{EDUCATION}} \\
+\textbf{New Jersey Institute of Technology} \hfill Newark, New Jersey \\
+\textit{Computer Science}  \hfill \hfill 2019 $-$ 2023 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PROJECT
@@ -114,27 +117,18 @@ CSS, mySQL, \LaTeX\\
 % Can also include personal projects, competitions, contribution to Open source.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent \textbf{\underline{PROJECT WORK}} \\
-\noindent \textbf{TTYR, Raspberry Pi Teletype} 
+\noindent \textbf{TTYR, Raspberry Pi Teletype - HackNJIT 2021 Finalist} 
 \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
 \item {GitHub: https://github.com/Person1080p/hackNJIT-TTYR}
-\item {Achieved finalist at hackNJIT 2021}
-\item {Learned how to interface with physical devices in a Linux enviroment (/dev/usb/)}
-\item {Created a C++ program that interfaced with a thermal printer using a raspberry pi to run bash commands}
+\item {Created a small project using a Raspberry Pi and C++ to act like a retro style "dummy terminal"}
+\item {Learned how to interface with physical devices in a Linux enviroment and write a pseudo device driver}
 \item {Featured in NJIT's Newspaper: https://njitvector.com/2021/12/a-zoo-of-hackers-on-campus/\\}
-\end{itemize}
-
-\noindent \textbf{Personal Website} 
-\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-\item {GitHub: https://github.com/Person1080p/PersonalSite}
-\item {Created a small personal website using regular HTML, CSS and JS hosted on my home network}
-\item {Learned about systems administration and programs like NGINX\\}
 \end{itemize}
 
 \noindent \textbf{Host of SIG-Linux} 
 \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
 \item {Taught fellow students how to setup a virtual enviroment to run a Linux virtual machine}
-\item {Discussed various distributions from Ubuntu, Debian, Arch and Slackware}
-\item {Compared the pros and cons of various aspects of each distribution like package manager and system daemons\\}
+\\
 \end{itemize}
 
 
